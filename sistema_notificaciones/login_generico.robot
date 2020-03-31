@@ -19,6 +19,7 @@ Configuracion entorno de ejecucion
     # Open Browser    https://www.autohero.com/de/search/    chrome
     #Maximize Browser Window
 #comment
+#comment2
 
     #Open Browser    ${URL}     ${BROWSER}
     GO TO   ${URL}
