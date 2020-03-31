@@ -3,10 +3,10 @@ trigger:
 
 jobs:
 
-- job: 'Devops-Testing despliegue continuo'
+- job: 'DevopsTesting'
   pool:
-    #vmImage: 'vs2017-win2016'
-    vmImage: 'windows-2019'
+    vmImage: 'vs2017-win2016'
+    #vmImage: 'windows-2019'
   strategy:
     matrix:
       Python37:
