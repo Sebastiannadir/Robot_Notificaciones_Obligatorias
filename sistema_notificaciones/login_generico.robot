@@ -13,8 +13,8 @@ ${BROWSER}      Chrome
 
 Configuracion entorno de ejecucion
     #Open Webdriver hosted on Azure Devops
-    Create Webdriver    ${BROWSER}    executable_path=C:/webdriver/chromedriver.exe
-    #Create Webdriver    ${BROWSER}    executable_path=D:/a/1/s/node_modules/chromedriver/lib/chromedriver/chromedriver.exe
+    #Create Webdriver    ${BROWSER}    executable_path=C:/webdriver/chromedriver.exe
+    Create Webdriver    ${BROWSER}    executable_path=D:/a/1/s/node_modules/chromedriver/lib/chromedriver/chromedriver.exe
     # Open Browser on Local Machine
     # Open Browser    https://www.autohero.com/de/search/    chrome
     #Maximize Browser Window
