@@ -4,7 +4,7 @@ Library         SeleniumLibrary     #plugins=SeleniumTestability;False;30 Second
 ${parent_id}           name=diagnosis-form-tabs-index
 *** Keywords ***
 Click notificaciones obligatorias
-    #Wait For Testability Ready
+    #Wait For Testability Ready se elimina esto
     Click Element   id=navbar-notifications
 Click en generar nueva notificacion
     [Arguments]    ${idEpisodio}
