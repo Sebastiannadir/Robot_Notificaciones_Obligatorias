@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200331 12:30:37.308" rpa="false">
+<suite id="s1" name="Sistema Notificaciones" source="C:\Users\snreyess\PycharmProjects\Robot_NotificacionesObligatorias\sistema_notificaciones">
+<suite id="s1-s1" name="TestCase" source="C:\Users\snreyess\PycharmProjects\Robot_NotificacionesObligatorias\sistema_notificaciones\TestCase.robot">
+<kw name="Configuracion entorno de ejecucion" library="login_generico" type="setup">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${BROWSER}</arg>
+<arg>executable_path=C:/webdriver/chromedriver.exe</arg>
+</arguments>
+<msg timestamp="20200331 12:30:37.953" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20200331 12:30:37.953" endtime="20200331 12:30:43.624"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20200331 12:30:43.624" level="INFO">Opening url 'https://wa-qa-sno.azurewebsites.net/'</msg>
+<status status="PASS" starttime="20200331 12:30:43.624" endtime="20200331 12:30:47.049"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200331 12:30:47.050" endtime="20200331 12:30:51.204"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=user-menu-dropdown</arg>
+</arguments>
+<msg timestamp="20200331 12:30:51.204" level="INFO">Clicking element 'id=user-menu-dropdown'.</msg>
+<status status="PASS" starttime="20200331 12:30:51.204" endtime="20200331 12:30:51.307"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Iniciar Sesión</arg>
+</arguments>
+<msg timestamp="20200331 12:30:51.308" level="INFO">Clicking element 'link=Iniciar Sesión'.</msg>
+<status status="PASS" starttime="20200331 12:30:51.307" endtime="20200331 12:30:52.197"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:30:37.953" endtime="20200331 12:30:52.198"></status>
+</kw>
+<test id="s1-s1-t1" name="[Test_001][step-01] Login generico">
+<kw name="Login generico" library="login_generico">
+<arguments>
+<arg>snreyess@achs.cl</arg>
+<arg>Inicio03.</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200331 12:30:53.202" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200331 12:30:52.200" endtime="20200331 12:30:53.203"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:loginfmt</arg>
+<arg>${userName}</arg>
+</arguments>
+<msg timestamp="20200331 12:30:53.205" level="INFO">Typing text 'snreyess@achs.cl' into text field 'name:loginfmt'.</msg>
+<status status="PASS" starttime="20200331 12:30:53.204" endtime="20200331 12:30:53.620"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:idSIButton9</arg>
+</arguments>
+<msg timestamp="20200331 12:30:53.621" level="INFO">Clicking element 'id:idSIButton9'.</msg>
+<status status="PASS" starttime="20200331 12:30:53.621" endtime="20200331 12:30:53.752"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200331 12:30:54.754" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200331 12:30:53.753" endtime="20200331 12:30:54.755"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:passwd</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200331 12:30:54.758" level="INFO">Typing text 'Inicio03.' into text field 'name:passwd'.</msg>
+<status status="PASS" starttime="20200331 12:30:54.756" endtime="20200331 12:30:55.070"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:idSIButton9</arg>
+</arguments>
+<msg timestamp="20200331 12:30:55.070" level="INFO">Clicking element 'id:idSIButton9'.</msg>
+<status status="PASS" starttime="20200331 12:30:55.070" endtime="20200331 12:31:20.687"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=idBtn_Back</arg>
+</arguments>
+<msg timestamp="20200331 12:31:20.689" level="INFO">Clicking element 'id=idBtn_Back'.</msg>
+<status status="PASS" starttime="20200331 12:31:20.688" endtime="20200331 12:31:23.250"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:30:52.199" endtime="20200331 12:31:23.250"></status>
+</kw>
+<tags>
+<tag>DEBUG LOGIN</tag>
+<tag>NewTag</tag>
+</tags>
+<status status="PASS" starttime="20200331 12:30:52.198" endtime="20200331 12:31:23.251" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="[Test_001][step-02] Click en notificaciones obligatorias">
+<kw name="Click notificaciones obligatorias" library="op1_generar_notificaciones_demo">
+<kw name="Wait For Testability Ready" library="SeleniumLibrary">
+<tags>
+<tag>plugin</tag>
+</tags>
+<doc>Explicitly waits until testability is ready or timeout happens.
+Parameters:
+- ``timeout`` Amount of time to wait until giving up for testability to be ready. Robot framework timestring
+- ``error_on_timeout`` if timeout occurs, should we throw an error</doc>
+<msg timestamp="20200331 12:31:23.272" level="WARN">Message: javascript error: Cannot read property 'when' of undefined
+JavaScript stack:
+TypeError: Cannot read property 'when' of undefined
+    at eval (eval at executeAsyncScript (:552:26), &lt;anonymous&gt;:5:28)
+    at eval (eval at executeAsyncScript (:552:26), &lt;anonymous&gt;:8:8)
+    at executeAsyncScript (&lt;anonymous&gt;:552:47)
+    at &lt;anonymous&gt;:567:29
+    at callFunction (&lt;anonymous&gt;:447:22)
+    at &lt;anonymous&gt;:461:23
+    at &lt;anonymous&gt;:462:3
+  (Session info: chrome=80.0.3987.149)
+</msg>
+<status status="PASS" starttime="20200331 12:31:23.256" endtime="20200331 12:31:23.274"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=navbar-notifications</arg>
+</arguments>
+<msg timestamp="20200331 12:31:23.275" level="INFO">Clicking element 'id=navbar-notifications'.</msg>
+<status status="PASS" starttime="20200331 12:31:23.275" endtime="20200331 12:31:32.974"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:31:23.255" endtime="20200331 12:31:32.974"></status>
+</kw>
+<tags>
+<tag>NewTag</tag>
+</tags>
+<status status="PASS" starttime="20200331 12:31:23.254" endtime="20200331 12:31:32.974" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="[Test_001][step-03] Ingresar paciente">
+<kw name="Ingresar paciente y buscar notificacion" library="op1_generar_notificaciones_demo">
+<arguments>
+<arg>16759571-5</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=grid-searchbox</arg>
+<arg>${RUT_Paciente}</arg>
+</arguments>
+<msg timestamp="20200331 12:31:32.978" level="INFO">Typing text '16759571-5' into text field 'id=grid-searchbox'.</msg>
+<status status="PASS" starttime="20200331 12:31:32.978" endtime="20200331 12:31:33.832"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=div.suggestions-searchbox.tt-suggestion.tt-selectable</arg>
+</arguments>
+<msg timestamp="20200331 12:31:33.833" level="INFO">Clicking element 'css=div.suggestions-searchbox.tt-suggestion.tt-selectable'.</msg>
+<status status="PASS" starttime="20200331 12:31:33.833" endtime="20200331 12:31:34.530"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200331 12:31:36.531" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200331 12:31:34.530" endtime="20200331 12:31:36.531"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//a[contains(@href, '#')])[6]</arg>
+</arguments>
+<msg timestamp="20200331 12:31:36.531" level="INFO">Clicking element 'xpath=(//a[contains(@href, '#')])[6]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200331 12:31:38.084" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200331 12:31:37.626" endtime="20200331 12:31:38.084"></status>
+</kw>
+<msg timestamp="20200331 12:31:38.088" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="#" aria-label="Ir a la primera página" title="Ir a la primera página" class="k-link k-pager-nav k-pager-first" data-page="1" tabindex="-1"&gt;...&lt;/a&gt; is not clickable at point (152, 697). Other element would receive the click: &lt;span class="text-muted"&gt;...&lt;/span&gt;
+  (Session info: chrome=80.0.3987.149)
+</msg>
+<status status="FAIL" starttime="20200331 12:31:36.531" endtime="20200331 12:31:38.088"></status>
+</kw>
+<status status="FAIL" starttime="20200331 12:31:32.977" endtime="20200331 12:31:38.088"></status>
+</kw>
+<tags>
+<tag>NewTag</tag>
+</tags>
+<status status="FAIL" starttime="20200331 12:31:32.976" endtime="20200331 12:31:38.089" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="#" aria-label="Ir a la primera página" title="Ir a la primera página" class="k-link k-pager-nav k-pager-first" data-page="1" tabindex="-1"&gt;...&lt;/a&gt; is not clickable at point (152, 697). Other element would receive the click: &lt;span class="text-muted"&gt;...&lt;/span&gt;
+  (Session info: chrome=80.0.3987.149)
+</status>
+</test>
+<test id="s1-s1-t4" name="[Test_001][step-04] Seleccionar del listado de notificaciones">
+<kw name="Ingresar estado notificacion" library="op1_generar_notificaciones_demo">
+<arguments>
+<arg>Iniciada</arg>
+</arguments>
+<kw name="Wait For Testability Ready" library="SeleniumLibrary">
+<tags>
+<tag>plugin</tag>
+</tags>
+<doc>Explicitly waits until testability is ready or timeout happens.
+Parameters:
+- ``timeout`` Amount of time to wait until giving up for testability to be ready. Robot framework timestring
+- ``error_on_timeout`` if timeout occurs, should we throw an error</doc>
+<status status="PASS" starttime="20200331 12:31:38.091" endtime="20200331 12:31:38.097"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(//input[@type='search'])[2]</arg>
+<arg>${FilterNotification}</arg>
+</arguments>
+<msg timestamp="20200331 12:31:38.098" level="INFO">Typing text 'Iniciada' into text field 'xpath=(//input[@type='search'])[2]'.</msg>
+<status status="PASS" starttime="20200331 12:31:38.097" endtime="20200331 12:31:38.333"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>None</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200331 12:31:38.334" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20200331 12:31:38.334" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20200331 12:31:38.334" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200331 12:31:38.333" endtime="20200331 12:31:38.379"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a.k-icon.k-i-expand</arg>
+</arguments>
+<msg timestamp="20200331 12:31:38.380" level="INFO">Clicking element 'css=a.k-icon.k-i-expand'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200331 12:31:38.854" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200331 12:31:38.400" endtime="20200331 12:31:38.854"></status>
+</kw>
+<msg timestamp="20200331 12:31:38.855" level="FAIL">Element with locator 'css=a.k-icon.k-i-expand' not found.</msg>
+<status status="FAIL" starttime="20200331 12:31:38.379" endtime="20200331 12:31:38.855"></status>
+</kw>
+<status status="FAIL" starttime="20200331 12:31:38.091" endtime="20200331 12:31:38.855"></status>
+</kw>
+<tags>
+<tag>NewTag</tag>
+</tags>
+<status status="FAIL" starttime="20200331 12:31:38.091" endtime="20200331 12:31:38.856" critical="yes">Element with locator 'css=a.k-icon.k-i-expand' not found.</status>
+</test>
+<test id="s1-s1-t5" name="[Test_001][step-05] Indicar si aplica diagnostico">
+<kw name="Click en continuar" library="op1_generar_notificaciones_demo">
+<kw name="Wait For Testability Ready" library="SeleniumLibrary">
+<tags>
+<tag>plugin</tag>
+</tags>
+<doc>Explicitly waits until testability is ready or timeout happens.
+Parameters:
+- ``timeout`` Amount of time to wait until giving up for testability to be ready. Robot framework timestring
+- ``error_on_timeout`` if timeout occurs, should we throw an error</doc>
+<status status="PASS" starttime="20200331 12:31:38.858" endtime="20200331 12:31:38.864"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://button[@type='button']</arg>
+</arguments>
+<msg timestamp="20200331 12:31:38.864" level="INFO">Clicking element 'xpath://button[@type='button']'.</msg>
+<status status="PASS" starttime="20200331 12:31:38.864" endtime="20200331 12:31:38.939"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:31:38.858" endtime="20200331 12:31:38.939"></status>
+</kw>
+<tags>
+<tag>NewTag</tag>
+</tags>
+<status status="PASS" starttime="20200331 12:31:38.857" endtime="20200331 12:31:38.939" critical="yes"></status>
+</test>
+<test id="s1-s1-t6" name="[Test_001][step-06] Formulario por diagnostico">
+<kw name="Click en boton grave" library="op1_generar_notificaciones_demo">
+<kw name="Wait For Testability Ready" library="SeleniumLibrary">
+<tags>
+<tag>plugin</tag>
+</tags>
+<doc>Explicitly waits until testability is ready or timeout happens.
+Parameters:
+- ``timeout`` Amount of time to wait until giving up for testability to be ready. Robot framework timestring
+- ``error_on_timeout`` if timeout occurs, should we throw an error</doc>
+<status status="PASS" starttime="20200331 12:31:38.942" endtime="20200331 12:31:39.053"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200331 12:31:40.054" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200331 12:31:39.053" endtime="20200331 12:31:40.054"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=label.form-checkbox-help</arg>
+</arguments>
+<msg timestamp="20200331 12:31:40.054" level="INFO">Clicking element 'css=label.form-checkbox-help'.</msg>
+<status status="PASS" starttime="20200331 12:31:40.054" endtime="20200331 12:31:40.139"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:31:38.942" endtime="20200331 12:31:40.139"></status>
+</kw>
+<tags>
+<tag>NewTag</tag>
+</tags>
+<status status="PASS" starttime="20200331 12:31:38.941" endtime="20200331 12:31:40.139" critical="yes"></status>
+</test>
+<test id="s1-s1-t7" name="[Test_001][step-07] Envio exitoso de notificacion">
+<kw name="Click en boton enviar" library="op1_generar_notificaciones_demo">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200331 12:31:41.143" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200331 12:31:40.142" endtime="20200331 12:31:41.143"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>$("[id^=form-send]").click();</arg>
+</arguments>
+<msg timestamp="20200331 12:31:41.143" level="INFO">Executing JavaScript:
+$("[id^=form-send]").click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20200331 12:31:41.143" endtime="20200331 12:31:41.149"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:31:40.142" endtime="20200331 12:31:41.149"></status>
+</kw>
+<tags>
+<tag>NewTag</tag>
+</tags>
+<status status="PASS" starttime="20200331 12:31:40.141" endtime="20200331 12:31:41.149" critical="yes"></status>
+</test>
+<test id="s1-s1-t8" name="[Test_001][step-08] Mensaje de confirmacion">
+<kw name="Validando Mensaje de confirmacion" library="op1_generar_notificaciones_demo">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200331 12:31:44.153" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200331 12:31:41.151" endtime="20200331 12:31:44.153"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:31:41.151" endtime="20200331 12:31:44.153"></status>
+</kw>
+<tags>
+<tag>NewTag</tag>
+</tags>
+<status status="PASS" starttime="20200331 12:31:41.150" endtime="20200331 12:31:44.153" critical="yes"></status>
+</test>
+<kw name="Cerrar Browsers" library="login_generico" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20200331 12:31:44.156" endtime="20200331 12:31:46.386"></status>
+</kw>
+<status status="PASS" starttime="20200331 12:31:44.155" endtime="20200331 12:31:46.386"></status>
+</kw>
+<doc>POC Controladores</doc>
+<status status="FAIL" starttime="20200331 12:30:37.338" endtime="20200331 12:31:46.386"></status>
+</suite>
+<status status="FAIL" starttime="20200331 12:30:37.309" endtime="20200331 12:31:46.391"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="2">Critical Tests</stat>
+<stat pass="6" fail="2">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">DEBUG LOGIN</stat>
+<stat pass="6" fail="2">NewTag</stat>
+</tag>
+<suite>
+<stat pass="6" fail="2" id="s1" name="Sistema Notificaciones">Sistema Notificaciones</stat>
+<stat pass="6" fail="2" id="s1-s1" name="TestCase">Sistema Notificaciones.TestCase</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200331 12:31:23.272" level="WARN">Message: javascript error: Cannot read property 'when' of undefined
+JavaScript stack:
+TypeError: Cannot read property 'when' of undefined
+    at eval (eval at executeAsyncScript (:552:26), &lt;anonymous&gt;:5:28)
+    at eval (eval at executeAsyncScript (:552:26), &lt;anonymous&gt;:8:8)
+    at executeAsyncScript (&lt;anonymous&gt;:552:47)
+    at &lt;anonymous&gt;:567:29
+    at callFunction (&lt;anonymous&gt;:447:22)
+    at &lt;anonymous&gt;:461:23
+    at &lt;anonymous&gt;:462:3
+  (Session info: chrome=80.0.3987.149)
+</msg>
+</errors>
+</robot>
