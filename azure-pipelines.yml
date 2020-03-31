@@ -1,14 +1,9 @@
-# Python package
-# Create and test a Python package on multiple Python versions.
-# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
-
 trigger:
 - master
 
 jobs:
 
-- job: 'Test'
+- job: 'Devops-Testing despliegue continuo'
   pool:
     #vmImage: 'vs2017-win2016'
     vmImage: 'windows-2019'
@@ -25,13 +20,13 @@ jobs:
       architecture: 'x64'
 
   - script: pip install robotframework robotframework-seleniumlibrary && npm install chromedriver
-    displayName: 'Install dependencies'
+    displayName: 'Instalando dependencias - RobotFramework & ChromeDriver'
 
   - powershell: robot -d results sistema_notificaciones
-    displayName: 'Run Robot Scripts'
+    displayName: 'Ejecutando robot Notificaciones obligatorias'
   - task: PublishTestResults@2
     inputs:
       testResultsFiles: outputxunit.xml
       searchFolder: 'D:\a\1\s\'
       condition: succeededOrFailed()
-      displayName: 'Publish Test Results outputxunit.xml'
+      displayName: 'Publicando los resultados del test en carpeta results'
